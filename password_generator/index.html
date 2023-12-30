@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASSWORD GENERATOR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Password Generator</h2>
+        </div>
+        <hr>
+        <div class="password">
+            <input class="inpt" type="text" disabled>
+            <span class="material-symbols-outlined" id="copyIcon">
+                stack
+            </span>
+        </div>
+        <div class="length">
+            <div class="title">
+                <h3>What should be the password length?</h3>
+            </div>
+            <div class="adjust">
+                <input class="inpt" type="range" min="1" max="30" value="15" step="1" id="lengthInput">
+            </div>
+        </div>
+        <div class="password_functionality">
+            <div class="title">
+                <h3>Do you want a password with:</h3>
+            </div>
+            <div class="functionality_list">
+                <ul>
+                    <li class="options">
+                        <label for="lowercase">Lowercase (a-z)</label>
+                        <input type="checkbox" id="lowercase">
+                    </li>
+                    <li class="options">
+                        <label for="Uppercase">Uppercase (A-Z)</label>
+                        <input type="checkbox" id="Uppercase">
+                    </li>
+                    <li class="options">
+                        <label for="Numbers">Numbers (0-9)</label>
+                        <input type="checkbox" id="Numbers">
+                    </li>
+                    <li class="options">
+                        <label for="Symbols">Symbols</label>
+                        <input type="checkbox" id="Symbols">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="btn">
+            <button onclick="generatePassword()" class="Generate">Generate</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    </body>
+</html>

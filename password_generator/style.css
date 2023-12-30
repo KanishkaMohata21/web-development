@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: url("bg_image.jpg") no-repeat center center/cover;
+}
+
+.container {
+    width: 400px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.header{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    border-color:black; 
+}
+
+.password{
+    margin: 15px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+}
+
+.inpt{
+    width: 300px;
+    height: 35px;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: black;
+}
+
+.length{
+    margin: 15px;
+}
+
+span{
+    cursor: pointer;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adjust{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.password_functionality{
+    height: 200px;
+}
+
+ul{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+ul li{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul li input{
+    height: 30px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.Generate{
+    padding: 6px 15px;
+    border: 2px solid black;
+    background-color: purple;
+    font-size: 1.2rem;
+    border-radius: 20px;
+}
+
+
